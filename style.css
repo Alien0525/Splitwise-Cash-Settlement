@@ -6,13 +6,11 @@ body {
 
 
 #mynetwork {
-    width: 50%;
     height: 100%;
     border: 1px solid lightgray;
 }
 
 #container2 {
-    width: 50%;
     height: 100%;
     border: 1px solid lightgray;
     display: flex;
@@ -42,4 +40,10 @@ body {
 #solve{
     margin:auto;
     display:block;
+}
+
+.but{
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    text-align: center;
 }

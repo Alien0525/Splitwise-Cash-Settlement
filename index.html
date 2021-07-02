@@ -26,34 +26,36 @@
             Splitwise Cash Settlement Project
 
     </nav>
-    <div id="container">
-        <div id="mynetwork"></div>
-        <div id="container2">
+    <div class="row" id="container">
+        <div class="col-lg-6"  id="mynetwork"></div>
+        <div class="col-lg-6" id="container2">
             <span  id="temptext">
-                <div  style="width: 80%; font-size: x-medium; margin: 2rem auto; font-family: 'Lato', sans-serif;">
+                <div  style="width: 80%; font-size: 1rem; margin: 2rem auto; font-family: 'Lato', sans-serif;">
                     Simplify debts (a.k.a. “debt simplification”) is an algorithm which Splitwise uses to restructure debt within groups of people. It does not change the total amount that anyone owes, but it makes it easier to pay people back by minimizing the total number of payments.
                     <br><br>
                     For example: say, Alice, Bob, and Charlie go on a trip. Alice owes Bob $20, and Bob owes Charlie $20. Rather than making two separate payments, Splitwise would tell Alice to pay $20 to Charlie directly, thereby minimizing the total number of payments being made. This ensures that people are paid back more quickly and efficiently.
                 </div>
                 
-                <div style="width: 100%; text-align: center; font-size: x-large; margin: 2rem 0 auto; font-family: 'Lato', sans-serif;" >
+                <div style="width: 100%; text-align: center; font-size: 1.5rem; margin: 2rem 0 auto; font-family: 'Lato', sans-serif;" >
                     Click on solve to minimize the total number of payments !
                 </div>
-                <div style="width: 80%; text-align: center; font-size: x-medium; margin: 0 auto; font-family: 'Lato', sans-serif;" >
-                    {Value written on edges represents the amount of money to be paid, and the arrow on edge represents who has to pay whom}
+                <div style="width: 80%; text-align: center; font-size: 1rem; margin: 0 auto; font-family: 'Lato', sans-serif;" >
+                    (Value written on edges represents the amount of money to be paid, and the arrow on edge represents who has to pay whom)
                 </div>
                 
             </span>
             <div id="mynetwork2" style="display: none"></div>
         </div>
+        <div class="but row">
+            <div class="col-lg-12 m-2">
+                <button type="button" class="btn btn-danger" id="generate-graph">Get New Problem</button>
+            </div>
+            <div class="col-lg-12 m-2">
+                <button type="button" class="btn btn-success" id="solve">Solve</button>
+            </div>
+        </div>
     </div>
 
-    <div>
-        <br>
-        <button type="button" class="btn btn-danger" id="generate-graph">Get New Problem</button>
-        <br>
-        <button type="button" class="btn btn-success" id="solve">Solve</button>
-    </div>
 </body>
 
 </html>
