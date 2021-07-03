@@ -46,7 +46,7 @@ onload = function () {
         // Adding people to nodes array
         let nodes = [];
         for(let i=1;i<=sz;i++){
-            nodes.push({id:i, label:"Person "+i})
+            nodes.push({id:i, label:"Friend "+i})
         }
         nodes = new vis.DataSet(nodes);
 
